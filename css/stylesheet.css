@@ -1,0 +1,248 @@
+/*Table of Contents*/
+
+/*	1		Body	*/
+/*	2		Texts 	*/
+/*	3		Header Area	*/
+/*	4		Containing Structure	*/
+
+
+/*----	1		Body Style */
+body, html{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	top: 0;
+	margin: 0 !important;
+	padding: 0;
+	background: rgba(255,255,255,1);
+}
+
+body{
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #333;
+}
+
+/*----	2		Text Style */
+
+/*Headers*/
+
+h1{
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 42px;
+	line-height: 1.1em;
+}
+
+.header-container h1{
+	color: #fff;
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+/*Paragraphs*/
+
+p{
+	font-family: sans-serif;
+	font-size: 24px;
+	line-height: 1.428em;
+}
+
+.header-container p{
+	color:#fff;
+}
+
+/*Links*/
+
+a, a:visited{
+	text-decoration: none;
+	font-size: 18px;
+}
+
+a:hover{
+
+}
+
+
+/*----	3		Header Area Style */
+
+
+.header-container{
+	width: 100%;
+	height: 100vh;
+	background: url(http://www.davidparrelli.com/sites/prestige/img/bg-featured1.gif);
+	overflow: hidden;
+}
+
+.header-overlay{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.3);
+}
+
+.header-featured{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 90%;
+	width: 300px;
+	background:rgba(0,0,0,.3);
+	overflow: auto;
+}
+
+.header-featured-area{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: -50px;
+	max-width: 60%;
+	max-height: 45%;
+	z-index: 10;
+	margin: auto;
+	text-align: center;	
+}
+
+.header-blurb img{
+	width: 200px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 5px rgba(200,200,200,.9);
+}
+
+/* Header Navigation */
+
+header{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	background:rgba(0,0,0,.1);
+}
+
+.brand{
+	float: left;
+	display: block;
+}
+
+.brand>h1{
+	margin: 0 0 0 20px;
+	padding: 0;
+	font-size: 42px;
+	color: #fff;
+	line-height: 70px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+ul.nav-bar{
+	list-style: none;
+	display: block;
+	float: right !important;
+	padding-left: 0;
+	margin:0;
+}
+
+.nav-bar>li{
+	float:left;
+	position: relative;
+	display: block;
+	text-align: -webkit-match-parent;
+}
+
+.nav-bar>li>a{
+	color: #fff;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 1em;
+	margin: 0 0 0 20px;
+	text-transform: uppercase;
+	line-height: 70px;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+}
+
+/*----	4		Containing Structure Style	*/
+
+/* Overall Structure */
+.body-container{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 1170px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.content{
+	padding: 4em 0;
+}
+
+/* Individual Structure*/
+#about{
+	
+}
+
+#projects{
+	background:tomato;	
+}
+
+#contact{
+	background:yellow;
+}
+
+/*---- 	Fixes */
+
+.clear-fix:after{
+	clear: both;
+	display: table;
+	content: " ";
+}
+
+.header-fix{
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+
+/*---- Media Queries */
+
+@media all and  (min-width: 768px){
+	.container{
+		width: 750px;
+	}
+	.nav-bar>li>a{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+@media all and (min-width: 992px){
+	.container{
+		width: 970px;
+	}
+}
+
+@media all and (min-width: 1200px){
+	.container{
+		width: 1170px;
+	}
+}
