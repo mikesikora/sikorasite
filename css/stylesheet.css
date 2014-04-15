@@ -70,7 +70,7 @@ p.display-grid-sm-detail{
 	font-weight: 650;
 }
 #resume p,#resume h1{
-	color: #333;
+	color: #fff;
 }
 /*Links*/
 
@@ -251,7 +251,7 @@ ul.nav-bar{
 }
 
 #resume{
-	background: #eee;
+	background: #333;
 }
 
 #projects{
@@ -265,7 +265,7 @@ ul.nav-bar{
 }
 
 #contact{
-	background:yellow;
+	background: #eee;
 }
 
 /* Portfolio */
@@ -435,7 +435,13 @@ ul.display-grid-sm-3{
 	z-index: 99;
 }
 
+.push-left{
+	position: relative;
+	float: left;
+}
+
 .push-right{
+	position: relative;
 	float: right;
 }
 
@@ -450,6 +456,25 @@ ul.display-grid-sm-3{
 .portfolio-img-fix{
 	top: -30px !important;
 }
+
+
+/*---- Buttons */
+
+ .download-resume{
+ 	padding: 1em 2em;
+ 	display: inline-block;
+ 	width: 25%;
+ 	margin: 1em 2em;
+ 	background: tomato;
+ 	text-transform: uppercase;
+ 	font-family: sans-serif;
+ 	font-size: 24px;
+ 	color: #333;
+ 	font-weight: bold;
+ 	border-radius: 4px;
+ 	box-shadow: 0 3px 0 0 rgba(255,99,71,.6);
+ }
+
 
 /*---- Animations */
 header, img, .brand>h1, .nav-bar>li>a, .piece-back, .piece-front, .grayscaled{
