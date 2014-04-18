@@ -14,7 +14,7 @@ body, html{
 	top: 0;
 	margin: 0 !important;
 	padding: 0;
-	background: rgba(255,255,255,1);
+	background:#f6f6f6;
 }
 
 body{
@@ -38,6 +38,12 @@ h1{
 	color: #fff;
 }
 
+#about h1{
+	line-height: 1.5em;
+	color: #fff;
+	text-shadow: 0 2px 0 rgba(0,0,0,.9);
+}
+
 h2{
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
@@ -53,7 +59,7 @@ h3{
 /*Paragraphs*/
 
 p{
-	font-family: sans-serif;
+	font-family: "Open Sans",sans-serif;
 	font-size: 24px;
 	line-height: 1.428em;
 }
@@ -94,11 +100,15 @@ a:hover{
 
 /* Colors */
 .color-red{
-	color: #ff4c4c;
+	color: #25bfff;
 }
 
 .center-text{
 	text-align: center;
+}
+
+.right-text{
+	text-align: right;
 }
 
 /*----	3		Header Area Style */
@@ -161,7 +171,7 @@ header{
 
 .header-shrink{
 	height: 70px;
-	background:rgba(255,255,255,1);
+	background:rgba(30,30,30,1);
 	box-shadow: 0 1px 1px 0px rgba(0,0,0,.3);
 }
 
@@ -174,7 +184,7 @@ header{
 	margin: 0 0 0 20px;
 	padding: 0;
 	font-size: 42px;
-	color: #fff;
+	color: #25bfff;
 	line-height: 70px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -196,7 +206,7 @@ ul.nav-bar{
 }
 
 .nav-bar>li>a{
-	color: #fff;
+	color: #25bfff;
 	font-weight: bold;
 	font-family: sans-serif;
 	font-size: 1em;
@@ -210,11 +220,13 @@ ul.nav-bar{
 
 .header-shrink ul>li>a{
 	padding: 0 15px;
-	color: #25bfff;
+	/*color: #25bfff;*/
+	color: #f6f6f6;
 }
  .header-shrink .brand>h1{
  	padding: 0;	
- 	color: #25bfff;
+ 	/*color: #25bfff;*/
+ 	color: #f6f6f6;
  }
 /*----	4		Containing Structure Style	*/
 
@@ -245,17 +257,31 @@ ul.nav-bar{
 	margin-right: 2.5%;
 }
 
+.overlay{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.3);
+}
+
 /* Individual Structure*/
+
 #about{
-	
+	/*background: #e7e7e7;*/
+	background:url(http://walls-world.com/wp-content/uploads/2013/11/USA-Maryland-Flag-Wallpaper.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 #resume{
-	background: #333;
+	background: url(../images/resume_back.png);
+	background-position: center;
+	background-size: cover;
 }
 
 #projects{
-	/*background:rgb(74,74,74);*/
+	
 }
 
 #portfolio{
@@ -356,13 +382,12 @@ ul.display-grid-sm-3{
 	height: 100%;
 	position: relative;
 	z-index: 3;
-	filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    filter: grayscale(100%); /* Current draft standard */
-    -webkit-filter: grayscale(100%); /* New WebKit */
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%); 
+
+    -webkit-filter: grayscale(.7); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(70%); /* Current draft standard */
+    -webkit-filter: grayscale(70%); /* New WebKit */
+    -moz-filter: grayscale(70%);
+    -ms-filter: grayscale(70%); 
 }
 .piece-back>img{
 	width: 100%;
@@ -443,6 +468,11 @@ ul.display-grid-sm-3{
 .push-right{
 	position: relative;
 	float: right;
+}
+
+.push-center{
+	position: relative;
+	margin: 0 auto;
 }
 
 .top-fix{

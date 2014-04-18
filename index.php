@@ -34,12 +34,120 @@
 
 		<div id="about" class="content"> <!-- Start of About Section -->
 			<div class="container"> <!-- Start of .container -->
+				<h1 class="center-text" style="color:#fff">I'm an inspired 21 year old Mechanical Engineer. <br>A proud graduate of UMD. <br>I love to learn and create.</h1>
+			</div>
+		</div>
+
+		<div class="content"> <!-- Start of About Section -->
+			<div class="container"> <!-- Start of .container -->
 				<div class="row clear-fix">
-					<div class="column-2" style="padding:30px 0;">
-						<h1 class="color-red">I'm an inspired 21 year old Mechanical Engineer. I love to learn and create.</h1>
-						<p>I am a coder. Each language I learn is a tool to bring my ideas to life. I've learned to do some pretty cool things, and I'll share them with you.</p>
+					<div class="column-2">
+
+						<p>I use a host of amazing software for my education and hobbies. I perfect my engineering designs with the continued use of these programs.
+						<!-- <strong>Solidworks</strong> | <strong>Autodesk Inventor</strong> | <strong>Pro E (PTC CREO)</strong> | <strong>Matlab</strong> | <strong>Simulink</strong><br>
+						<strong>Adobe Photoshop</strong> | <strong>Adobe Illustrator</strong> | <strong>Adobe After Effects</strong> | <strong>Eclipse</strong> -->
+						</p>
+						<!-- <img src="images/mouse.png" style="width:300px; padding-right:20px;" class="push-left"> -->
+						<div style="width:420px;height:120px;margin:20px 0;background:rgb(30,30,30);"></div>
+						<div style="width:420px;height:120px;margin:20px 0;background:rgb(90,90,90);"></div>
+						<div style="width:420px;height:120px;margin:20px 0;background:rgb(150,150,150);"></div>
+						<!--
+						<ul class="display-grid-sm-3 clear-fix">
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/html.png">
+									</div>
+									<div class="piece-front">
+										<div>Expert</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/css.png">
+									</div>
+									<div class="piece-front">
+										<div>Expert</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/js.png">
+									</div>
+									<div class="piece-front">
+										<div>Expert</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/rails.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/php.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/matlab.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/arduino.png">
+									</div>
+									<div class="piece-front">
+										<div>Intermediate</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/android.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/cplusplus.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					-->
 					</div>
 					<div class="column-2">
+						<p class="right-text">I am a coder. Each language I learn is a tool to bring my ideas to life. I've learned to do some pretty cool things, and I'll share them with you.</p>
 						<ul class="display-grid-sm-3 clear-fix push-right">
 							<li>
 								<div class="grid-piece">
@@ -135,15 +243,8 @@
 						<!-- <p class="display-grid-sm-detail push-right">I am a coder. Each language I learn is a tool to bring my ideas to life. I've learned to do some pretty cool things, and I'll share them with you.</p> -->
 					</div>
 				</div>
-				<div class="row clear-fix">
-						<img src="images/mouse.png" style="width:300px; padding-right:20px;" class="push-left">
-						<div style="padding: 50px 0;">
-							<h1>Software</h1>
-							<p>Through my education and hobbies I have used a host of amazing software:<br>
-							<strong>Solidworks</strong> | <strong>Autodesk Inventor</strong> | <strong>Pre E (PTC CREO)</strong> | <strong>Matlab</strong> | <strong>Simulink</strong><br>
-							<strong>Adobe Photoshop</strong> | <strong>Adobe Illustrator</strong> | <strong>Adobe After Effects</strong> | <strong>Eclipse</strong>
-							</p>
-						</div>
+				<div class="row clear-fix" style="padding-top:2em">
+						
 				</div>
 			</div>
 		</div>
