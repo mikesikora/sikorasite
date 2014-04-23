@@ -10,6 +10,7 @@
 			<ul class="nav-bar ">
 				<li><a href="#about" class="nav-link">About</a></li>
 				<li><a href="#projects" class="nav-link">Projects</a></li>
+				<li><a href="#resume" class="nav-link">Resume</a></li>
 				<li><a href="#contact" class="nav-link">Contact</a></li>
 			</ul>
 		</div>
@@ -17,250 +18,151 @@
 
 	<!-- Featured Header Area (backdrop) -->
 
-	<div class="header-container">
-		<div class="header-overlay"></div>
-		<div class="header-featured-area">
-			<div class="header-blurb">
-				<img src="http://i.imgur.com/8G8v7Mf.png">
-				<h1>You Fail When You Quit.</h1>
+	<div id="header" class="content"> <!-- Start of Header Section -->
+		<div class="container">
+			<img src="images/IMG_3559.jpg" style="width:70%; margin:7.5% 15% 0% 15%; box-shadow:0 0 0 5px rgba(30,30,30,1);">
+			<p class="motto">Welcome! I am a Mechanical Engineer from the University of Maryland. I love to learn and I'm inspired by taking risks. Take a risk and learn more about me!</p>
+			<div class="center-text down-button">
+				<a class="nav-link" href="#about">&#x25BC;</a>
 			</div>
-			<button href="#about" class="nav-link learn-more-button">Learn More</button>
 		</div>
 	</div>
 
+	<div id="about" class="content"> <!-- Start of About Section -->
+			
+			<div class="container"> <!-- Start of .container -->
+
+				<p class="center-text pad-top lg-paragraph">Taking risks, learning something new, and having fun are words of wisdom that have been told to me since I was a child. I try to live by those three pillars of ideology, and I realize that every opportunity has the chance to impact my life.</p>
+
+				<div class="row clear-fix">
+					<div class="grid-3-lg">
+						<div class="pad-15">
+							<h2 class="center-text">Education</h2>
+							<div class="row clear-fix center-text">
+								<img src="images/sp_seal.png" style="width:75px;">
+								<p>St. Paul's School</p>	
+							</div>
+							<div class="row clear-fix center-text">
+								<img src="images/um_seal.png" style="width:75px;">
+								<p>University of Maryland</p>	
+							</div>
+						</div>
+					</div>
+					<div class="grid-3-lg">
+						<div class="pad-15">
+							<h2 class="center-text">Languages</h2>
+						<div>
+						<ul class="display-grid-sm-3 clear-fix ">
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/html.png">
+									</div>
+									<div class="piece-front">
+										<div>Expert</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/css.png">
+									</div>
+									<div class="piece-front">
+										<div>Expert</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/js.png">
+									</div>
+									<div class="piece-front">
+										<div>Expert</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/rails.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/php.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/matlab.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/arduino.png">
+									</div>
+									<div class="piece-front">
+										<div>Intermediate</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/android.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="grid-piece">
+									<div class="piece-back">
+										<img src="images/cplusplus.png">
+									</div>
+									<div class="piece-front">
+										<div>Experienced</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+							</div>
+						</div>
+					</div>
+					<div class="grid-3-lg">
+						<div class="pad-15">
+							<h2 class="center-text">Software</h2>
+							<p>I use a host of amazing software for my education and hobbies. I perfect my engineering designs with the continued use of these programs.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 	<!-- Main Body Contain -->
 
+
+
 	<div class="body-container">
-
-		<div id="about" class="content"> <!-- Start of About Section -->
-			<div class="container"> <!-- Start of .container -->
-				<h1 class="center-text" style="color:#fff">I'm an inspired 21 year old Mechanical Engineer. <br>A proud graduate of UMD. <br>I love to learn and create.</h1>
-			</div>
-		</div>
-
-		<div class="content"> <!-- Start of About Section -->
-			<div class="container"> <!-- Start of .container -->
-				<div class="row clear-fix">
-					<div class="column-2">
-
-						<p>I use a host of amazing software for my education and hobbies. I perfect my engineering designs with the continued use of these programs.
-						<!-- <strong>Solidworks</strong> | <strong>Autodesk Inventor</strong> | <strong>Pro E (PTC CREO)</strong> | <strong>Matlab</strong> | <strong>Simulink</strong><br>
-						<strong>Adobe Photoshop</strong> | <strong>Adobe Illustrator</strong> | <strong>Adobe After Effects</strong> | <strong>Eclipse</strong> -->
-						</p>
-						<!-- <img src="images/mouse.png" style="width:300px; padding-right:20px;" class="push-left"> -->
-						<div style="width:420px;height:120px;margin:20px 0;background:rgb(30,30,30);"></div>
-						<div style="width:420px;height:120px;margin:20px 0;background:rgb(90,90,90);"></div>
-						<div style="width:420px;height:120px;margin:20px 0;background:rgb(150,150,150);"></div>
-						<!--
-						<ul class="display-grid-sm-3 clear-fix">
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/html.png">
-									</div>
-									<div class="piece-front">
-										<div>Expert</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/css.png">
-									</div>
-									<div class="piece-front">
-										<div>Expert</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/js.png">
-									</div>
-									<div class="piece-front">
-										<div>Expert</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/rails.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/php.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/matlab.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/arduino.png">
-									</div>
-									<div class="piece-front">
-										<div>Intermediate</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/android.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/cplusplus.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					-->
-					</div>
-					<div class="column-2">
-						<p class="right-text">I am a coder. Each language I learn is a tool to bring my ideas to life. I've learned to do some pretty cool things, and I'll share them with you.</p>
-						<ul class="display-grid-sm-3 clear-fix push-right">
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/html.png">
-									</div>
-									<div class="piece-front">
-										<div>Expert</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/css.png">
-									</div>
-									<div class="piece-front">
-										<div>Expert</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/js.png">
-									</div>
-									<div class="piece-front">
-										<div>Expert</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/rails.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/php.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/matlab.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/arduino.png">
-									</div>
-									<div class="piece-front">
-										<div>Intermediate</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/android.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="grid-piece">
-									<div class="piece-back">
-										<img src="images/cplusplus.png">
-									</div>
-									<div class="piece-front">
-										<div>Experienced</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-						<!-- <p class="display-grid-sm-detail push-right">I am a coder. Each language I learn is a tool to bring my ideas to life. I've learned to do some pretty cool things, and I'll share them with you.</p> -->
-					</div>
-				</div>
-				<div class="row clear-fix" style="padding-top:2em">
-						
-				</div>
-			</div>
-		</div>
-
-
-		<div id="resume" class="content"> <!-- Start of About Section -->
-			<div class="container"> <!-- Start of .container -->
-				<div class="row clear-fix">
-					<div class="center-text">
-						<h1>Resume</h1>
-						<p>Select one of the links below to download a PDF version of my resume.</p>
-						<a href="#" class="download-resume">Traditional </a> <a href="#" class="download-resume">Modern</a>
-					</div>
-				</div>
-			</div>	
-		</div>
 
 		<div id="projects" class="content"> <!-- Start of Projects Section -->
 			<div class="container clear-fix"> <!-- Start of .container -->
@@ -318,16 +220,20 @@
 						</figure>
 					</div>
 
-					<div class="col-3 portfolio-item">
-						<figure>
-							<div class="info"><a href="#" class="info">&#10162; Hello</a></div>
-							<div class="info-backdrop"></div>
-							<img src="http://i.imgur.com/Md6pkSn.jpg">
-						</figure>
-					</div>
-
 				</div>
 			</div>
+		</div>
+
+		<div id="resume" class="content"> <!-- Start of About Section -->
+			<div class="container"> <!-- Start of .container -->
+				<div class="row clear-fix">
+					<div class="center-text">
+						<h1>Resume</h1>
+						<p>Select one of the links below to download a PDF version of my resume.</p>
+						<a target="_blank" href="documents/sikora_resume.pdf" class="download-resume">Traditional </a> <a target="_blank" href="documents/sikora_modern_resume.pdf" class="download-resume">Modern</a>
+					</div>
+				</div>
+			</div>	
 		</div>
 
 		<div id="contact" class="content"> <!-- Start of Projects Section -->
@@ -335,9 +241,9 @@
 				<div class="center-text">
 					<h1>Contact</h1>
 					<p>email: msikora.umd@gmail.com</p>
-					<p>phone: (xxx) xxx-xxxx</p>
+					<p>phone: (443) 938-6873</p>
 					<p>Linkdin</p>
-					<p>Github</p>
+					<p><a href="http://www.github.com/mikesikora" target="_blank">Github</a></p>
 				</div>
 			</div>
 		</div>

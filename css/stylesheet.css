@@ -38,18 +38,13 @@ h1{
 	color: #fff;
 }
 
-#about h1{
-	line-height: 1.5em;
-	color: #fff;
-	text-shadow: 0 2px 0 rgba(0,0,0,.9);
-}
-
 h2{
-	font-family: "Montserrat", sans-serif;
+	font-family: "PT Sans", sans-serif;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 30px;
 	line-height: 1.5em;
 	text-transform: uppercase;
+	margin-bottom: 1.5em;
 }
 
 h3{
@@ -59,13 +54,24 @@ h3{
 /*Paragraphs*/
 
 p{
-	font-family: "Open Sans",sans-serif;
-	font-size: 24px;
+	font-family: "PT Sans",sans-serif;
+	font-size: 18px;
 	line-height: 1.428em;
+}
+
+.lg-paragraph{
+	font-size: 22px;
 }
 
 .header-container p{
 	color:#fff;
+}
+
+p.motto{
+
+	font-size: 32px;
+	color: #f6f6f6;
+	padding: 0 15%;
 }
 
 p.display-grid-sm-detail{
@@ -92,7 +98,7 @@ a:hover{
 .learn-more-button{
 	padding: 1em 2em;
 	font-size: 16px;
-	background: #2EBFF0;
+	background: #FF5340;
 	border:none;
 	box-shadow: 0 1px 0 0 rgba(9,9,9,.8);
 	border-radius: 4px;
@@ -117,7 +123,9 @@ a:hover{
 .header-container{
 	width: 100%;
 	height: 100vh;
-	background: url(http://www.davidparrelli.com/sites/prestige/img/bg-featured1.gif);
+	background: url(../images/IMG_3559.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	overflow: hidden;
 }
 
@@ -166,7 +174,7 @@ header{
 	top: 0;
 	left: 0;
 	z-index: 200;
-	background:rgba(0,0,0,.1);
+	background:rgba(30,30,30,1);
 }
 
 .header-shrink{
@@ -184,7 +192,7 @@ header{
 	margin: 0 0 0 20px;
 	padding: 0;
 	font-size: 42px;
-	color: #25bfff;
+	color: #f6f6f6;
 	line-height: 70px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -206,7 +214,7 @@ ul.nav-bar{
 }
 
 .nav-bar>li>a{
-	color: #25bfff;
+	color: #f6f6f6;
 	font-weight: bold;
 	font-family: sans-serif;
 	font-size: 1em;
@@ -221,12 +229,12 @@ ul.nav-bar{
 .header-shrink ul>li>a{
 	padding: 0 15px;
 	/*color: #25bfff;*/
-	color: #f6f6f6;
+	color: #FF5340;
 }
  .header-shrink .brand>h1{
  	padding: 0;	
  	/*color: #25bfff;*/
- 	color: #f6f6f6;
+ 	color: #FF5340;
  }
 /*----	4		Containing Structure Style	*/
 
@@ -267,18 +275,17 @@ ul.nav-bar{
 
 /* Individual Structure*/
 
+#header{
+	background: url(../images/overlay.png) repeat, #FF5340;
+}
+
 #about{
-	/*background: #e7e7e7;*/
-	background:url(http://walls-world.com/wp-content/uploads/2013/11/USA-Maryland-Flag-Wallpaper.jpg);
-	background-position: center;
-	background-size: cover;
+	background: #e7e7e7;
+	
 }
 
 #resume{
-	background: url(../images/resume_back.png);
-	background-position: center;
-	background-size: cover;
-}
+	background: #FF5340}
 
 #projects{
 	
@@ -319,7 +326,7 @@ figure>img{
 }
 
 a.info{
-	color: tomato;
+	color: #FF5340;
 	font-size: 25px;
 	font-family: sans-serif;
 	height: 1.5em;
@@ -351,24 +358,46 @@ div.info{
 ul.display-grid-sm-3{
 	list-style: none;
 	display: block;
-	width: 420px;
+	width: 330px;
 	position: relative;
 	text-align: left;
 	padding-left: 0;
-	margin: 0;
+	margin: 0 auto;
 }
 
 .display-grid-sm-3>li{
 	position: relative;
 	float: left;
 	display: block;
-	width: 120px;
-	height: 120px;
-	margin: 0px 20px 20px 0px;
+	width: 100px;
+	height: 100px;
+	margin: 0px 10px 10px 0px;
 	text-align: center;
 }
 
 /* Grid Pieces */
+
+.grid-2-lg{
+	position: relative;
+	float: left;
+	width: 50%;
+}
+.grid-2-lg:last-child:after{
+	clear: both;
+	display: table;
+	content: " ";
+}
+
+.grid-3-lg{
+	position: relative;
+	float: left;
+	width: 33.33%;
+}
+.grid-3-lg:last-child:after{
+	clear: both;
+	display: table;
+	content: " ";
+}
 
 .grid-piece{
 	cursor: pointer;
@@ -487,27 +516,55 @@ ul.display-grid-sm-3{
 	top: -30px !important;
 }
 
+.pad-15{
+	padding: 0 15px;
+}
+
+.pad-top{
+	padding: 1em 0;
+}
 
 /*---- Buttons */
+
+.down-button{
+	margin:50px 0; display:box
+}
+
+.down-button>a{
+	display: inline-block;
+	padding:8px 25px; 
+	border-radius:3px;
+	background: rgba(30,30,30,1); 
+	font-size:24px; 
+	color:rgba(250,250,250,1);
+}
+
+.down-button>a:hover{
+	background: rgba(30,30,30,.8); 
+	font-size: 30px;
+}
 
  .download-resume{
  	padding: 1em 2em;
  	display: inline-block;
  	width: 25%;
  	margin: 1em 2em;
- 	background: tomato;
+ 	background: rgba(30,30,30,1);
  	text-transform: uppercase;
  	font-family: sans-serif;
  	font-size: 24px;
- 	color: #333;
+ 	color:rgba(250,250,250,1);
  	font-weight: bold;
  	border-radius: 4px;
- 	box-shadow: 0 3px 0 0 rgba(255,99,71,.6);
+ 	box-shadow: 0 3px 0 0 rgba(0,0,0,.4);
  }
 
+.download-resume:hover{
+	background: rgba(30,30,30,.7);
+}
 
 /*---- Animations */
-header, img, .brand>h1, .nav-bar>li>a, .piece-back, .piece-front, .grayscaled{
+header, img, .brand>h1, .nav-bar>li>a, .piece-back, .piece-front, .grayscaled, .download-resume, .down-button>a{
 	-webkit-transition:all 0.3s;
 	transition:all 0.3s;
 }

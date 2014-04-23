@@ -1,7 +1,7 @@
 $(function() {
 	$(window).scroll(function(){
       var scrolled = $(window).scrollTop();
-      if(scrolled>200){
+      if(scrolled>10){
       	$('header').addClass('header-shrink');
       }else{
       	$('header').removeClass('header-shrink');
