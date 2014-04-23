@@ -150,7 +150,15 @@
 					<div class="grid-3-lg">
 						<div class="pad-15">
 							<h2 class="center-text">Software</h2>
-							<p>I use a host of amazing software for my education and hobbies. I perfect my engineering designs with the continued use of these programs.</p>
+							<div class="center-text">
+								<p>Solidworks</p>
+								<p>Autodesk Inventor</p>
+								<p>Matlab & Simulink</p>
+								<p>Eclipse</p>
+								<p>Adobe Photoshop</p>
+								<p>Adobe Illustrator</p>
+								<p>Adobe After Effects</p>
+							</div>
 						</div>
 					</div>
 				</div>
