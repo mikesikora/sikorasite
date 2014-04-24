@@ -31,7 +31,7 @@
 	<div id="about" class="content"> <!-- Start of About Section -->
 			
 			<div class="container"> <!-- Start of .container -->
-
+				<!-- <h1 class="center-text">About Me</h1> -->
 				<p class="center-text pad-top lg-paragraph">Taking risks, learning something new, and having fun are words of wisdom that have been told to me since I was a child. I try to live by those three pillars of ideology, and I realize that every opportunity has the chance to impact my life.</p>
 
 				<div class="row clear-fix">
@@ -182,7 +182,7 @@
 					
 					<div class="portfolio-item">
 						<figure>
-							<div class="info"><a href="#" class="info">&#10162; Twitterplays.com</a></div>
+							<div class="info"><a href="projects.php?twitterplays" class="info">&#10162; Twitterplays.com</a></div>
 							<div class="info-backdrop"></div>
 							<img src="http://i.imgur.com/J9uxMud.png">
 						</figure>

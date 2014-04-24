@@ -60,7 +60,7 @@ p{
 }
 
 .lg-paragraph{
-	font-size: 22px;
+	font-size: 18px;
 }
 
 .header-container p{
@@ -273,6 +273,15 @@ ul.nav-bar{
 	background:rgba(0,0,0,.3);
 }
 
+.article-columns{
+	column-count:2;
+	-webkit-column-count:2;
+	column-gap:50px;
+	-webkit-column-gap:50px;
+}
+.article-columns img{
+	width: 100%;
+}
 /* Individual Structure*/
 
 #header{
