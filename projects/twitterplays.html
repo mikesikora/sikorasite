@@ -1,62 +1,25 @@
 <div id="header" class="content"> <!-- Start of Header Section -->
 	<div class="container center-text">
 		<h1>Twitterplays.com</h1>
-		<a href="/">Return Home</a>
+		<a href="/#projects">Return Home</a>
 	</div>
 </div>
 
 <div class="content"> <!-- Start of Header Section -->
 	<div class="container article-columns">
-		<h2>The Idea</h2>
-		<img src="http://i.imgur.com/m4tZ0cm.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<img src="http://i.imgur.com/MjF2qrd.jpg">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="article-img">
+			<img src="http://i.imgur.com/J9uxMud.png">
+			<p class="caption left-text">Figure 1. Twitter Plays logo.</p>
+		</div>
+		<p>This website uses the Twitter REST API to import youtube videos relating to top sports plays. I worked on this project at Bitcamp (University of Maryland's first hackathon event) with two friends. We developed the back-end of the site using PHP, with HTML, CSS, and some JQuery to structure and style the site. At first we considered using Ruby on Rails to develop the site, but we couldn't find enough resources for the Twtter Ruby Gems we wanted to use.</p>
+
+		<p>Visit <a href="http://www.twitterplays.com" target="_blank">Twitter Plays</a></p>
+
+		<p>We posted our source code on Github. It is a relatively simple project, which is why we chose to do it over a weekend at Bitcamp.</p>
+
+		<p>I want to move forward with this website. It is a fun and simple site with practically no maintanence. What we should do next is use Twitter's Streaming API rather than the REST API. What's the difference? Well Streaming maintains an open request to the Twitter server, while use the REST API will only send a single request for data every time the page is loaded.  We are also limited by a "rate limit" when using the REST API that can cause the site to go down when too many requests have been sent during a short period of time.</p>
+
+		<p>Moving to the Streaming API will benefit several aspects of the website, but it will require the addition of a database. The streaming API will allow us to follow data in real time. Our data aquisition can be more accurate, and rather than relying on twitter's filtering features we can develop a more specific filter for our needs.  The database will be necessary for storing individual plays. Each tweet that is streamed to our website will be filtered, and the useful data that tweet has provided us can be added to bulster our databse.</p>
+
 	</div>
 </div>

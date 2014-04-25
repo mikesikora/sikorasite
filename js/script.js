@@ -94,5 +94,12 @@ $(function() {
 		console.log("okay");
 	});
 
+
+	function setArticleWidth(){
+		var wid = $(".article-img>img").css("width");
+		$(".article-img").css("width",wid);
+	}
+	setArticleWidth();
+
 });
 

@@ -198,7 +198,7 @@
 
 					<div class="portfolio-item">
 						<figure>
-							<div class="info"><a href="#" class="info">&#10162; A 3D Print</a></div>
+							<div class="info"><a href="projects.php?caneproject" class="info">&#10162; A 3D Print</a></div>
 							<div class="info-backdrop"></div>
 							<img src="http://i.imgur.com/1QKH8OB.png">
 						</figure>
@@ -222,9 +222,9 @@
 
 					<div class="col-3 portfolio-item">
 						<figure>
-							<div class="info"><a href="#" class="info">&#10162; Hello</a></div>
+							<div class="info"><a href="projects.php?laxshaft" class="info">&#10162; 3D Lacrosse Shaft</a></div>
 							<div class="info-backdrop"></div>
-							<img src="http://i.imgur.com/Md6pkSn.jpg">
+							<img src="http://i.imgur.com/a5NmsDp.png">
 						</figure>
 					</div>
 

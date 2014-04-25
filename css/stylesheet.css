@@ -109,6 +109,10 @@ a:hover{
 	color: #25bfff;
 }
 
+.left-text{
+	text-align: left;
+}
+
 .center-text{
 	text-align: center;
 }
@@ -273,14 +277,26 @@ ul.nav-bar{
 	background:rgba(0,0,0,.3);
 }
 
+.article-img{
+	margin: 0 auto;
+}
+
 .article-columns{
+	min-height: 800px;
 	column-count:2;
 	-webkit-column-count:2;
 	column-gap:50px;
 	-webkit-column-gap:50px;
 }
 .article-columns img{
-	width: 100%;
+	max-width: 100%;
+}
+
+p.caption{
+	font-size: 16px;
+	font-style: italic;
+	padding: 0;
+	margin: 5px 0; 
 }
 /* Individual Structure*/
 
