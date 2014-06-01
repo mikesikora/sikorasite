@@ -5,22 +5,58 @@
 	</div>
 </div>
 
-<div class="content"> <!-- Start of Header Section -->
-	<div class="container article-columns">
-		<h2>The Idea</h2>
-		<img src="http://i.imgur.com/n3z5Yxy.png">
-		<p>This website uses the Twitter REST API to import youtube videos relating to top sports plays. I worked on this project at Bitcamp (University of Maryland's first hackathon event) with two friends. We developed the back-end of the site using PHP, with HTML and CSS to structure and style the site. At first we considered using Ruby on Rails to develop the site, but we couldn't find enough resources for the Twtter Ruby Gems we wanted to use.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="content"> <!-- Start of Content Section -->
+	<div class="container">
+		<div class="article-columns">
+			<div class="article-header">
+				<img src="http://i.imgur.com/gyppxUS.png">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="article-columns">
+			<p>In the second semester of my senior year at UMD I participated in a project for the CECD Innovation Lab. The project, dubbed the Smart Cane, involved developing an assistive device for the blind that included two components: a hat and cane. In the initial phase of project development I was involved in developing an ultrasonic sensor array and inertial measurement unit to detect object distance and height in front of a user. This phase included the use of a Raspberry Pi microcontroller and developing C++ to calculate sensor data into useful measurements. 
+			</p>
+			<p>The second phase of the project was to develop a working prototype for both components of the Smart Cane. This phase is where most of my time was spent. Below you will see 3D models and 3D printed prototypes that I produced. </p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="article-columns">
+			<h2 class="center-text">Hat Platform</h2>
+			<p>The hat platform prototype was designed to provide consistent angles between the ultrasonic sensors and the IMU.  Prior to the 3D prototype, cardboard was used as a structure for hold the ultrasonic sensors.  This cardboard structure worked for rapid prototyping, but the cardboard had inaccurate dimensions (including the distance between sensors and their relative angles), it did not incorporate the IMU, and had an unprofessional appearance.</p>
+			<div class="clear-fix">
+				<div class="grid-2-lg">
+					<div class="article-img">
+						<img src="http://i.imgur.com/1QKH8OB.png">
+						<p class="caption left-text">Figure 1. Sensor prototype 3D render in Autodesk Inventor.</p>
+					</div>
+				</div>
+				<div class="grid-2-lg">
+					<div class="article-img">
+						<img src="http://i.imgur.com/m36kUyq.jpg">
+						<p class="caption left-text">Figure 2. Image of 3D print with sensors attached.</p>
+					</div>
+				</div>
+			</div>
+			<p>The prototyping phase of the Smart Cane project was meant to accomplish two tasks: an accurate implementation of the technology for benchmarking purposes, and a visualization of the product.  To accomplish these tasks it was determined that a 3D model should be developed for both the hat and the cane.  The 3D model for each component was exported in a high resolution STL file format, and loaded into a Stratatsys FDM Dimension SST 3D printer capable of a 100 micron resolution.  The material used for each prototype is ABS plastic, which has a yield stress of 42.5 Mpa. However, the crack propigation from the 3D deposition will cause failure before the yield stress is reached.
+			</p>
+			<p>The hat platform consisted of three parts: a single platform for the IMU and an ultrasonic sensor position perpendicular to the IMU (seen in Figure 4.3 as part # H.02), and then two clip-ons that were attached to the platform that housed a single ultrasonic sensor each (seen in Figure 4.4).  The prototype was split into three parts for ease of manufacturing during 3D printing, and to accommodate different sensor angles during testing.  The clip ons had a box dimension of 31.75 mm x 36.83 mm x 10.16 mm.  The main platform had a box dimension of 31.75 mm x 31.75 mm x 50.8 mm.  the most sensitive area of the design was the teeth interface, seen above in Figure 4.5.
+			</p>
+			<p>The design was optimized for 3D printing by reducing the material bordering the ultrasonic sensor slots, as well as on the backside of the sensors.  This reduction can be seen when looking at the initial 3D model in Figure 4.4 and comparing it to the printed model in Figure 4.2.</p>
+			<p>Post 3D print the hat platform had some inaccuracies caused by shrinkage.  This shrinkage was most noticeable around the areas of interface, specifically the teeth for the clip-ons and their paired slots on the platform. This issue was managed by heating a flat piece of metal and expanding the grooves between each tooth to accommodate the main platform's slot interface.  The alignment was corrected and the prototype worked as designed.
+			</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="article-columns">
+			<h2 class="center-text">Handle Prototype</h2>
+			<p>The cane handle prototype had four primary objectives it had to accomplish: house a vibration motor, house a button for user interface, house an ATmega controller with RF transceiver, and house a power source.  The secondary objectives of the design were to include a power switch and ensure the design was ergonomically accurate to the final design for benchmarking purposes. The box dimension of the assembled cane prototype was 45 mm x 45 mm x 360 mm.  The inner diameter of the handle section (part C.01 and C.02) is 20 mm and the inner ribs that support the AA batteries are 14.5 mm in diameter.  These ribs provide support for the overall structure as well as for the AA batteries.</p>
+			<div class="article-img">
+				<img src="http://i.imgur.com/gyppxUS.png">
+				<p class="caption left-text">Figure 3. Cane handle 3D render.</p>
+			</div>
+			<p>The electronic housing at the front (part C.03 and C.04) is 35 mm in diameter for the inner dimension.  This proved to be a large enough area to house a breadboard containing the ATmega, transceiver, and remaining circuit features.  The nose of C.04 has an extruded shaft that would be press fit inside the original hollow metal cane.  The inner dimensions to this area are sensitive to the success of the product, and are illustrated in Appendix 4.1.  The total assembly was accomplished through a series of 12 through holes that could be connected with a nut and bolt.  The maximum diameter for the bolt was 2.8 mm.  All 12 through holes were identical for ease of assembly.  However most of these through holes were not needed, and the four parts could be assembled by press fitting each together.  The placement of the button and vibration motor were such that a user’s palm would be over the vibration motor and have the button easily accessible from that grip.</p>
+			<p>Much like with the hat platform prototype, the 3D print for the cane had some inaccuracies with the printed product.  The through holes, button slot, vibration motor slot, and rear power switch slot were all smaller than their modeled dimensions.  Sand paper was used to expand the holes and slots to accommodate the necessary dimensions.  The shrinkage actually improved the press fit design for the extruded end of part C.04 as it interfaced with the hollow cane shaft.</p>
+		</div>
 	</div>
 </div>

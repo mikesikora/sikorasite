@@ -1,4 +1,47 @@
 $(function() {
+	setupDynamics();
+
+	function setupDynamics(){
+		$width = $(window).width();
+		console.log($width);
+		if ($width < 768) {
+			createPortfolio(500,417,1);
+		};
+
+		if ($width < 992 && $width >= 768) {
+			createPortfolio(340,283,2);
+		};
+		if ($width > 992 && $width >= 768) {
+			createPortfolio(400,333,2);
+		};
+		if ($width > 1200) {
+			createPortfolio(340,283,3);
+		};
+	}
+	// Window Size Variation
+	$(window).resize(function(){
+		$width = $(window).width();
+		
+		if ($width < 768) {
+			console.log($width);
+			createPortfolio(400,333,1);
+		};
+
+		if ($width < 992 && $width >= 768) {
+			console.log($width);
+			createPortfolio(340,283,2);
+		};
+		if ($width > 992 && $width >= 768) {
+			console.log($width);
+			createPortfolio(400,333,2);
+		};
+		if ($width > 1200) {
+			console.log($width);
+			createPortfolio(340,283,3);
+		};
+
+	});
+
 	$(window).scroll(function(){
       var scrolled = $(window).scrollTop();
       if(scrolled>10){
@@ -60,27 +103,32 @@ $(function() {
 		// randomColor = setInterval(colorGrid,3000);
 	});
 
-	function createPortfolio(Width, Height){
+	function createPortfolio(Width, Height, Col){
 		var port = $('.portfolio-item');
+		var portFigure = $('.portfolio-item>figure');
 		var counting = -1;
 		for (var i = 0; i < port.length; i++){
-		    if(i%3===0){
+		    if(i%Col===0){
 		        counting++;
 		    }
-		    var newLeft = i%3*Width+"px";
+		    var newLeft = i%Col*Width+"px";
 		    var newTop = counting*Height+"px";
+		    var newWid = Width-40+"px";
+		    var newHei = Height-40+"px";
 		    port.eq(i).css({
 		        "left":newLeft,
 		        "top":newTop
 		    });
+		    portFigure.eq(i).css({
+		        "width":newWid,
+		        "height":newHei
+		    });
 		}
 		$('#portfolio').css({
 			"height":(counting+1)*Height+"px",
-			"width":3*Width+"px"
+			"width":Col*Width+"px"
 		});
 	}
-
-	createPortfolio(340,283);
 
 	$("figure").hover(function(){
 		$(this).children('img').addClass('portfolio-img-fix');

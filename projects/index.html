@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>SportsFeed</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+	<style type="text/css">
+	.headline{width: 400px;
+		height: 400px;
+		background:;}
+	</style>
+
+</head>
+
+<body>
+	<div id="header" class="header-container">
+		<div class="center-container">
+			<div id="school" class="school-logo drop-3px">
+				<img src="http://image.cdnllnwnl.xosnetwork.com/fls/29700/old_site/images/6895369.jpeg">
+			</div>
+			<a class="sportsfeed-logo">SportsFeed</a>
+		</div>
+	</div>
+
+	<div id="body-content" class="body-container">
+		<br class="clear-float"/>
+		<div class="center-container">
+
+		<div class="headline"></div>
+
+			<div class="grid-third">
+				<div class="tweet-container"></div>
+				<br class="clear-float"/>
+				<div class="tweet-container"></div>
+				<br class="clear-float"/>
+				<div class="tweet-container"></div>
+			</div>
+			<div class="grid-third">
+				<div class="tweet-container"></div>
+				<br class="clear-float"/>
+				<div class="tweet-container"></div>
+			</div>
+			<div class="grid-third">
+				<div class="tweet-container"></div>
+				<br class="clear-float"/>
+				<div class="tweet-container"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".school-logo").hover(function(){
+			$(this).find("img").stop(true,true);
+			$(".sportsfeed-logo").stop(true,true);
+			$(this).find("img").animate({width:"70px",height:"70px",'padding-top':"15px"},250);
+			$(".sportsfeed-logo").animate({top:"150px"},250);
+
+		},function(){
+			$(this).find("img").stop(true,true);
+			$(".sportsfeed-logo").stop(true,true);
+			$(this).find("img").animate({width:"80px",height:"80px",'padding-top':"10px"},250);
+			$(".sportsfeed-logo").animate({top:"0px"},250);
+		});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".tweet-container").hide();
+		});
+		$(window).load(function(){
+			var delayy = 0;
+			$(".body-container .center-container .grid-third").each(function(){
+				$(this).children(".tweet-container").each(function(){
+					$(this).delay(delayy).fadeIn(250);
+					delayy+=100;
+				})
+			})
+		})
+	</script>
+
+</body>
+
+</html>

@@ -5,9 +5,9 @@
 	<header>
 		<div class="container">
 			<div class="brand">
-				<h1>Michael Sikora</h1>
+				<h1 href="#header" class="nav-link">Michael Sikora</h1>
 			</div>
-			<ul class="nav-bar ">
+			<ul class="nav-bar">
 				<li><a href="#about" class="nav-link">About</a></li>
 				<li><a href="#projects" class="nav-link">Projects</a></li>
 				<li><a href="#resume" class="nav-link">Resume</a></li>
@@ -31,8 +31,10 @@
 	<div id="about" class="content"> <!-- Start of About Section -->
 			
 			<div class="container"> <!-- Start of .container -->
-				<!-- <h1 class="center-text">About Me</h1> -->
-				<p class="center-text pad-top lg-paragraph">Taking risks, learning something new, and having fun are words of wisdom that have been told to me since I was a child. I try to live by those three pillars of ideology, and I realize that every opportunity has the chance to impact my life.</p>
+				<div class="center-text">
+					<h1>About Me</h1>
+					<p class="lg-paragraph">Taking risks, learning something new, and having fun are words of wisdom that have been told to me since I was a child. I try to live by those three pillars of ideology, and I realize that every opportunity has the chance to impact my life.</p>
+				</div>
 
 				<div class="row clear-fix">
 					<div class="grid-3-lg">
@@ -44,7 +46,7 @@
 							</div>
 							<div class="row clear-fix center-text">
 								<img src="images/um_seal.png" style="width:75px;">
-								<p>University of Maryland</p>	
+								<p>University of Maryland<br>BS Mechanical Engineering</p>	
 							</div>
 						</div>
 					</div>
@@ -190,7 +192,7 @@
 
 					<div class="portfolio-item">
 						<figure>
-							<div class="info"><a href="#" class="info">&#10162; Terpshell</a></div>
+							<div class="info"><a href="projects.php?terpshell" class="info">&#10162; Terpshell</a></div>
 							<div class="info-backdrop"></div>
 							<img src="http://i.imgur.com/nl6cVTX.jpg">
 						</figure>

@@ -6,20 +6,24 @@
 </div>
 
 <div class="content"> <!-- Start of Header Section -->
-	<div class="container article-columns">
-		<div class="article-img">
-			<img src="http://i.imgur.com/J9uxMud.png">
-			<p class="caption left-text">Figure 1. Twitter Plays logo.</p>
+	<div class="container">
+		<div class="article-columns">
+			<p>Twitter Plays was developed at Bitcamp 2014 with the intention of gathering recent top sports plays and displaying them in a simple, ordered fashion.</p>
+			<div class="article-img">
+				<img src="http://i.imgur.com/J9uxMud.png">
+				<p class="caption left-text">Figure 1. Twitter Plays logo.</p>
+			</div>
+			<p>This website uses the Twitter REST API to import youtube videos relating to top sports plays. I worked on this project at Bitcamp 2014 (University of Maryland's first hackathon event) with two friends. We developed the back-end of the site using PHP, with HTML, CSS, and some JQuery to structure and style the site. At first we considered using Ruby on Rails to develop the site, but we couldn't find enough resources for the Twtter Ruby Gems we wanted to use.</p>
+
+			<p>Visit <a href="http://www.twitterplays.com" target="_blank">Twitter Plays</a></p>
+
+			<p>We posted our source code on Github. It is a relatively simple project, which is why we chose to do it over a weekend at Bitcamp.</p>
+
+			<p>I want to move forward with this website. It is a fun and simple site with practically no maintanence. What we should do next is use Twitter's Streaming API rather than the REST API. What's the difference? Well Streaming maintains an open request to the Twitter server, while use the REST API will only send a single request for data every time the page is loaded.  We are also limited by a "rate limit" when using the REST API that can cause the site to go down when too many requests have been sent during a short period of time.</p>
+
+			<p>Moving to the Streaming API will benefit several aspects of the website, but it will require the addition of a database. The streaming API will allow us to follow data in real time. Our data aquisition can be more accurate, and rather than relying on twitter's filtering features we can develop a more specific filter for our needs.  The database will be necessary for storing individual plays. Each tweet that is streamed to our website will be filtered, and the useful data that tweet has provided us can be added to bulster our databse.</p>
+
+			<p>We are considering use node.js to support a mySQL database. In researching Twitter's Streaming API we have seen node.js implimented in this way, and these examples will make our implimentation a little easier.</p>
 		</div>
-		<p>This website uses the Twitter REST API to import youtube videos relating to top sports plays. I worked on this project at Bitcamp (University of Maryland's first hackathon event) with two friends. We developed the back-end of the site using PHP, with HTML, CSS, and some JQuery to structure and style the site. At first we considered using Ruby on Rails to develop the site, but we couldn't find enough resources for the Twtter Ruby Gems we wanted to use.</p>
-
-		<p>Visit <a href="http://www.twitterplays.com" target="_blank">Twitter Plays</a></p>
-
-		<p>We posted our source code on Github. It is a relatively simple project, which is why we chose to do it over a weekend at Bitcamp.</p>
-
-		<p>I want to move forward with this website. It is a fun and simple site with practically no maintanence. What we should do next is use Twitter's Streaming API rather than the REST API. What's the difference? Well Streaming maintains an open request to the Twitter server, while use the REST API will only send a single request for data every time the page is loaded.  We are also limited by a "rate limit" when using the REST API that can cause the site to go down when too many requests have been sent during a short period of time.</p>
-
-		<p>Moving to the Streaming API will benefit several aspects of the website, but it will require the addition of a database. The streaming API will allow us to follow data in real time. Our data aquisition can be more accurate, and rather than relying on twitter's filtering features we can develop a more specific filter for our needs.  The database will be necessary for storing individual plays. Each tweet that is streamed to our website will be filtered, and the useful data that tweet has provided us can be added to bulster our databse.</p>
-
 	</div>
 </div>
